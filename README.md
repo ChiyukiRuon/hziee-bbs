@@ -1,24 +1,7 @@
 # hziee-bbs
 
-## Project setup
-```
-npm install
-```
+## 关于本项目
+这是一个校园社区的前端项目，界面参照了Twitter。使用Vue3+ElementPlus，主要用于我的Vue学习
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 关于我
+一个无所事事的大学生

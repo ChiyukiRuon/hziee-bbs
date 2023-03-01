@@ -1,0 +1,7 @@
+.el-input {
+    border: none;
+}
+
+.el-input__wrapper {
+    border-radius: 50px;
+}
