@@ -1,14 +1,23 @@
+<!--
+    Name: login
+    Description: 登录页面
+    Author: ChiyukiRuon
+    Date:
+-->
 <template>
     <div class="common-layout">
         <el-container id="main-container">
             <el-header>
-                <el-link :underline="false" href="/"><img src="@/assets/electro.png" style="width: 50px;margin-left: 0px;margin-top: 10px"></el-link>
+                <el-link :underline="false" href="/"><img src="@/assets/electro.png"
+                                                          style="width: 50px;margin-left: 0px;margin-top: 10px">
+                </el-link>
             </el-header>
             <el-main>
                 <el-card class="box-card" style="max-width: 500px">
                     <template #header>
                         <div class="card-header" style="text-align: center">
-                            <router-link to="/loginForm">登录</router-link> |
+                            <router-link to="/loginForm">登录</router-link>
+                            |
                             <router-link to="/registerForm">注册</router-link>
                         </div>
                     </template>
@@ -31,10 +40,10 @@ export default {
     name: "UserLogin",
     components: {},
     data() {
-        return ({})
+        return ({});
     },
     beforeCreate() {
-        document.querySelector('body').setAttribute('style', 'margin:0;')
+        document.querySelector("body").setAttribute("style", "margin:0;");
     }
 };
 </script>

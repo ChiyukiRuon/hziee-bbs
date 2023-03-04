@@ -1,16 +1,16 @@
 <!--
-    Name: user
-    Description: 用户详情页面
+    Name: TopicView
+    Description: 话题页面
     Author: ChiyukiRuon
-    Date:
+    Date: 2023/3/4.
 -->
 <template>
-    <div>用户详情</div>
+    This is Topic Page
 </template>
 
 <script>
 export default {
-    name: "UserDetail"
+    name: "TopicView"
 };
 </script>
 

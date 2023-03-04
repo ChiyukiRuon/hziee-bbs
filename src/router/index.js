@@ -4,8 +4,10 @@ import home from "@/views/HomeView.vue"
 import login from "@/pages/login/login.vue";
 import user from "@/pages/user/user.vue";
 import about from "@/views/AboutView.vue";
-import LoginFormView from "@/views/LoginFormView.vue";
-import RegisterFormView from "@/views/RegisterFormView.vue";
+import LoginFormView from "@/components/LoginForm.vue";
+import RegisterFormView from "@/components/RegisterForm.vue";
+import SettingView from "@/views/SettingView.vue";
+import TopicView from "@/views/TopicView.vue";
 
 const routes = [
     // {
@@ -38,6 +40,22 @@ const routes = [
         component: user,
         meta: {
             title: "用户详情 | HZIEE-BBS"
+        }
+    },
+    {
+        path: "/setting",
+        name: "setting",
+        component: SettingView,
+        meta: {
+            title: "设置 | HZIEE-BBS"
+        }
+    },
+    {
+        path: "/topic",
+        name: "topic",
+        component: TopicView,
+        meta: {
+            title: "话题 | HZIEE-BBS"
         }
     },
     {

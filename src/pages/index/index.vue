@@ -1,3 +1,9 @@
+<!--
+    Name: index
+    Description: 首页
+    Author: ChiyukiRuon
+    Date:
+-->
 <template>
     <div class="common-layout">
         <el-container id="main-container">
@@ -6,7 +12,8 @@
                 <el-aside width="250px">
                     <!-- Logo && Title -->
                     <el-row style="margin-top: 10px">
-                        <router-link to="/"><img src="@/assets/electro.png" style="width: 50px;margin-left: 15px"></router-link>
+                        <router-link to="/"><img src="@/assets/electro.png" style="width: 50px;margin-left: 15px">
+                        </router-link>
                         <span style="margin-left: 10px;line-height: 50px">HZIEE-BBS</span>
                     </el-row>
                     <!-- Menu List -->
@@ -35,12 +42,13 @@
                     <!-- User Info Card or Login Card -->
                     <el-row>
                         <!-- User Info Card -->
-                        <UserInfoCardView :avatar-src="avatarSrc" :username="username" :uid="uid"/>
+                        <UserInfoCardView :avatar-src="avatarSrc" :username="username" :uid="uid" />
                         <!-- Login Card -->
                         <LoginCardView />
                         <!-- Copyright -->
-                        <div style="width: 100%;text-align:center;margin-top: 20px;color: rgb(124,124,124)">
-                            @2023 HZIEE-BBS
+                        <div style="width: 100%;font-size: 15px;text-align:center;margin-top: 20px;color: rgb(124,124,124)">
+                            <div>浙ICP备2021035003号</div>
+                            <div>&copy;2023 HZIEE-BBS | 隐私政策</div>
                         </div>
                     </el-row>
                 </el-aside>
@@ -63,21 +71,21 @@ export default {
         return {
             avatarSrc: "https://static.chiyukiruon.top/images/touxiang_01.GIF",
             username: "千雪琉音",
-            uid: "ChiyukiRuon",
-        }
+            uid: "ChiyukiRuon"
+        };
     },
     methods: {
         Search() {
-            return Search
-        },
+            return Search;
+        }
     },
     components: {
         MenuListView,
         LoginCardView,
-        UserInfoCardView,
+        UserInfoCardView
     },
     beforeCreate() {
-        document.querySelector('body').setAttribute('style', 'margin:0;')
+        document.querySelector("body").setAttribute("style", "margin:0;");
     }
 };
 </script>
@@ -122,7 +130,7 @@ a {
     border-left: 1px var(--el-border-color) var(--el-border-style);
 }
 
-#search-input>>>.el-input {
+#search-input >>> .el-input {
     border: none;
 }
 </style>
